@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dodawanie Sesji"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/wplataText"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:hint="Buy in" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/wyplataEdit"
+        android:layout_below="@+id/wplataText"
+        android:layout_centerHorizontal="true"
+        android:hint="Wygrana" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wyplataEdit"
+        android:weightSum="1"
+        android:layout_alignEnd="@+id/wyplataEdit"
+        android:layout_alignStart="@+id/wyplataEdit">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turniej"
+            android:id="@+id/turniejRadio"
+            android:checked="true" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Stolik"
+            android:id="@+id/stolikRadio"
+            android:checked="false" />
+    </RadioGroup>
+</RelativeLayout>

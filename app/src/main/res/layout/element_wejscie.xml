@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ikona"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="zdjecie"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/dataEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ikona"
+        android:paddingBottom="10dp"
+        android:textColor="#CC0033"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/wygrana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textColor="#3399FF"
+        android:textSize="14dp"
+        android:layout_alignTop="@+id/koszt"
+        android:layout_toEndOf="@+id/dataEdit"
+        android:layout_marginStart="62dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/data"
+        android:layout_alignBaseline="@+id/dataEdit"
+        android:layout_alignBottom="@+id/dataEdit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/koszt"
+        android:layout_below="@+id/data"
+        android:layout_toEndOf="@+id/ikona" />
+
+
+</RelativeLayout>

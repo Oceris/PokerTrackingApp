@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/ikona"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:contentDescription="zdjecie"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/dataEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textColor="@color/abc_primary_text_material_light"
+        android:textSize="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ikona"
+        android:layout_marginStart="94dp" />
+
+    <TextView
+        android:id="@+id/opis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:textColor="#3399FF"
+        android:textSize="14dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Zysk"
+        android:id="@+id/textView"
+
+        android:textColor="@color/abc_primary_text_material_light"
+        android:layout_alignBottom="@+id/dataEdit"
+        android:layout_toEndOf="@+id/dataEdit" />
+
+    CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuń"
+        android:id="@+id/removeBox"
+        android:checked="false"
+        android:layout_alignBottom="@+id/ikona"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
